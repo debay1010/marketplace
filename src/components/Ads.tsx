@@ -11,11 +11,11 @@ export default function Ads(ad: FormData) {
 	return (
 		<>
 			<div className="lg:flex lg:space-x-5 m-10">
-				<div className="lg:flex- bg-white border-t-8 border-green-600 pb-10 ">
+				<div className="lg:flex-1 bg-white border-t-8 border-green-600 pb-10 ">
 					<img
 						src={ad.imageUrl[0]}
 						alt={ad.title}
-						className=" h-[300px] w-[300px]"
+						className=" h-[70%] w-[70%] p-3"
 					/>
 					<div className="m-5">
 						<p className="text-2xl font-bold">{ad.title}</p>
@@ -53,13 +53,13 @@ export default function Ads(ad: FormData) {
 					</div>
 				</div>
 
-				<div className="lg:w-[30px] hidden lg:inline">
-					<div className="bg-white text-sm">
+				<div className="lg:w-[30%] hidden lg:inline">
+					<div className="bg-white p-5 text-sm">
 						<div className="font-bold text-center">
 							{" "}
 							Safety Tips{" "}
 						</div>
-						<ol>
+						<ol className=" list-disc  space-y-2">
 							<li>
 								Don't pay in advance, including for delivery
 							</li>
