@@ -1,7 +1,7 @@
 "use client";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import ReportOffIcon from "@mui/icons-material/ReportOff";
-export default function () {
+export default function Error() {
 	return (
 		<div className="mx-auto max-w-5xl p-10 text-center">
 			<p className="font-bold text-2xl">uh...</p>

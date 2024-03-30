@@ -4,6 +4,7 @@ import { Span } from "next/dist/trace";
 import { Space_Mono } from "next/font/google";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import Image from "next/image";
 
 export default function Ads(ad: FormData) {
 	// export default function Ads(data: OutputData) {
@@ -42,10 +43,12 @@ export default function Ads(ad: FormData) {
 						<div className="flex space-x-5">
 							{ad.imageUrl.map((image: string, index: number) => (
 								<span key={index} className="">
-									<img
+									<Image
 										src={image}
 										className="h-[100px] w-[100px]"
 										alt="Ad Image"
+										width={100}
+										height={100}
 									/>
 								</span>
 							))}
@@ -56,8 +59,7 @@ export default function Ads(ad: FormData) {
 				<div className="lg:w-[30%] hidden lg:inline">
 					<div className="bg-white p-5 text-sm">
 						<div className="font-bold text-center">
-							{" "}
-							Safety Tips{" "}
+							Safety Tips{""}
 						</div>
 						<ol className=" list-disc  space-y-2">
 							<li>

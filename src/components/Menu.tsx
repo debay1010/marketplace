@@ -8,7 +8,7 @@ export default function Menu() {
 		<div className="bg-white w-full">
 			<div className="">
 				{menuList.map((menuItem) => (
-					<div className="">
+					<div key={menuItem.href} className="">
 						<MenuList
 							logo={menuItem.logo}
 							href={menuItem.href}
