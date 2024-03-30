@@ -58,10 +58,8 @@ export default function Ads(ad: FormData) {
 
 				<div className="lg:w-[30%] hidden lg:inline">
 					<div className="bg-white p-5 text-sm">
-						<div className="font-bold text-center">
-							Safety Tips{""}
-						</div>
-						<ol className=" list-disc  space-y-2">
+						<div className="font-bold text-center">Safety Tips</div>
+						{/* <ol className="list-disc space-y-2">
 							<li>
 								Don't pay in advance, including for delivery
 							</li>
@@ -71,7 +69,7 @@ export default function Ads(ad: FormData) {
 								you have requested for
 							</li>
 							<li>Only pay when you are satisfied</li>
-						</ol>
+						</ol> */}
 					</div>
 				</div>
 			</div>
